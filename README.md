@@ -1,6 +1,8 @@
 # 🚀 Personal Portfolio Website
 
-A clean and modern **personal portfolio** website built with **HTML, CSS, and a little bit of JavaScript**.
+A clean and modern **personal portfolio** website built with **HTML, CSS, and JavaScript**.
+
+Click [here](https://emma-obelenge.github.io/emma-obelenge_portfolio/) to view the live website!
 
 ## 📌 Features
 - **Fully Responsive**
