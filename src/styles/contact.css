@@ -1,0 +1,9 @@
+.contact-section {
+  padding: 20px;
+  background-color: #e3f2fd;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
