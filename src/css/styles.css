@@ -67,6 +67,6 @@ button:hover,
   }
 
   to {
-    transform: translate(max(2px, 0.125vw), max(-5px, -0.313vw));
+    transform: translate(max(1px, 0.1vw), max(-3px, -0.213vw));
   }
 }

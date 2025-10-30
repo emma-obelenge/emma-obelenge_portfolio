@@ -80,11 +80,49 @@
   gap: max(1rem, 1vw);
 }
 
-.contact-form form div {
+/* Updated selector to target the input row */
+.contact-form form .form-row {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  /* This is now the container for the two input/label pairs */
 }
+
+/* ----------------------------------------------------------------------- */
+/* ACCESSIBILITY: Visually hides labels while keeping them readable by SRs. */
+/* ----------------------------------------------------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Tweak form input styling to account for new label and structural changes */
+/* Selector now targets inputs within the form-row div */
+.contact-form form .form-row input {
+  height: max(2rem, 2vw);
+  width: 45%; /* Retain width for side-by-side inputs */
+  border: max(1px, 0.06vw) solid rgb(196, 194, 194);
+  padding: max(0.5rem, 0.5vw);
+  color: var(--light-mode-text);
+  font-size: max(0.8rem, 0.8vw);
+  font-weight: bold;
+}
+
+/* Remove this placeholder styling since we are using labels */
+/*
+.contact-form input::placeholder {
+  font-size: max(0.7rem, 0.7vw);
+  font-weight: bold;
+}
+*/
+/* ----------------------------------------------------------------------- */
 
 .contact-form h3 {
   font-size: max(1.2rem, 1.6vw);
@@ -92,6 +130,7 @@
   margin-bottom: max(1rem, 1vw);
 }
 
+/* These still target the correct inputs */
 #contact-form-subject,
 #contact-form-textarea {
   width: 100%;
@@ -101,48 +140,51 @@
   font-size: max(0.8rem, 0.8vw);
   font-weight: bold;
 }
-
-.contact-form input::placeholder {
-  font-size: max(0.7rem, 0.7vw);
-  font-weight: bold;
-}
-
-.contact-form input {
-  height: max(2rem, 2vw);
-  width: 45%;
-  border: max(1px, 0.06vw) solid rgb(196, 194, 194);
+#contact-form-submit-btn {
+  background-color: var(--button-color-dark);
+  color: var(--dark-mode-text);
   padding: max(0.5rem, 0.5vw);
-  color: var(--light-mode-text);
-  font-size: max(0.8rem, 0.8vw);
-  font-weight: bold;
+  font-size: var(--responsive-font-size);
+  font-weight: bolder;
+}
+#contact-form-submit-btn:hover {
+  background-color: var(--button-color);
 }
 
+/* Adjusted: The close button is now a <button> element, not a <div> */
 .close-button {
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: max(0.2rem, 0.2vw) max(0.4rem, 0.4vw);
+  right: 1rem;
+  top: 1rem;
+  /* Use padding for size */
+  padding: max(0.5rem, 0.5vw); /* Increased padding for easier click */
   background-color: #ede7f5;
   margin: max(0.5rem, 0.5vw);
+  border: none; /* Ensure no default button border */
+  cursor: pointer;
+  z-index: 1; /* Ensure it's above other form elements */
+}
+
+/* New: Styling for the 'x' text on the button */
+.close-button {
+  font-size: max(1.5rem, 1.5vw);
+  font-weight: bold;
+  color: var(--button-color);
+  line-height: 1; /* Keep content compact */
 }
 
 .close-button:hover {
-  cursor: pointer;
-}
-
-.close-button p {
-  font-size: max(0.8rem, 0.8vw);
-  font-weight: bold;
+  /* Cursor: pointer is inherited, but keep hover background if needed */
   color: var(--button-color);
 }
 
 .contact-form button {
-  padding: max(0.6rem, 0.6vw);
-  background-color: var(--button-color);
+  padding: max(0.3rem, 0.3vw);
   border: transparent;
-  color: var(--dark-mode-text);
+  color: var(--button-color-dark);
   cursor: pointer;
 }
+/* End Contact Me Section Adjustments */
 
 /* Footer Section */
 footer {
@@ -173,15 +215,20 @@ footer {
   padding-bottom: max(2rem, 2vw);
 }
 
+/* The footer-icon span is now hidden via ARIA, but the icon styling is retained here 
+   in case it is visually used somewhere else. */
 .footer-icon .fa-solid {
   color: var(--alternate-color);
   font-size: calc(var(--resonsive-font-size) * 1.5);
   margin-bottom: max(1.5rem, 1.5vw);
 }
 
-.footer-item .bold {
+/* Adjusted to also target the new anchor links for phone/email */
+.footer-item .bold,
+.footer-item a.bold {
   font-weight: bold;
   color: var(--dark-mode-text);
+  text-decoration: none; /* Remove default underline from links */
 }
 
 .footer-item p,
@@ -203,6 +250,8 @@ footer {
   padding-top: max(2rem, 2vw);
   padding-bottom: max(2rem, 2vw);
 }
+
+/* Social links container is now a semantic <nav> */
 .social-links {
   margin-left: auto;
   width: fit-content;
@@ -226,3 +275,4 @@ footer {
 .social-links a:hover i {
   color: var(--alternate-color);
 }
+/* End Footer Section Adjustments */

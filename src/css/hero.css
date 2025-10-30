@@ -42,14 +42,14 @@
   font-size: calc(var(--resonsive-font-size) * 1.75);
   margin-bottom: max(1rem, 1vw);
   margin-top: max(1rem, 1vw);
+  width: fit-content;
 }
 
 .text-animate {
-  width: 0;
   overflow: hidden;
   white-space: nowrap;
   border-right: max(0.15rem, 0.15vw) solid var(--alternate-color);
-  animation: typing 2s steps(40, end) infinite;
+  animation: typing 1.5s steps(40, end) infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-out;
 }

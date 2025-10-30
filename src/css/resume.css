@@ -75,7 +75,7 @@
 
 .experience > div h3,
 .exp-tools-used {
-  color: var(--light-mode-text);
+  color: gray;
 }
 
 .experience > div h3,

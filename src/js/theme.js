@@ -35,6 +35,8 @@ export default function themeEvent() {
 
   // Night Light Theme implementation
   function activateNightLight() {
+    document.querySelector(".hero-content h3").style.backgroundColor =
+      "transparent";
     document.querySelector(".hero-content").style.backgroundColor = darkMode;
     document.querySelector(".hero").style.backgroundColor = darkMode;
     document.querySelector(".resume-container").style.backgroundColor =
@@ -73,6 +75,8 @@ export default function themeEvent() {
 
   // Day Light Theme implementation
   function activateDayLight() {
+    document.querySelector(".hero-content h3").style.backgroundColor =
+      "#fff7df";
     document.querySelector(".hero-content").style.backgroundColor = lightMode;
     document.querySelector(".hero").style.backgroundColor = lightMode;
     document.querySelector(".resume-container").style.backgroundColor =
