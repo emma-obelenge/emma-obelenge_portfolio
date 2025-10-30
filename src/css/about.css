@@ -1,0 +1,87 @@
+/* AboutMe Section */
+
+#about {
+  background-color: var(--dark-mode);
+}
+
+.about-me-heading-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: max(2rem, 2vw);
+  width: 60%;
+  margin-bottom: max(3rem, 3vw);
+}
+
+.about-me-heading-container h2 {
+  color: var(--dark-mode-text);
+}
+.about-me-heading-container p {
+  font-weight: bolder;
+}
+
+.about-me-content-container {
+  display: flex;
+  flex-direction: row;
+  gap: max(4rem, 4vw);
+  width: 100%;
+  padding: max(1rem, 1vw) max(2rem, 2vw);
+  align-items: center;
+}
+
+.about-me-portrait,
+.about-me-portrait img {
+  border-radius: max(2rem, 2vw);
+  width: max(40rem, 40vw);
+}
+
+.about-me-portrait img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 max(1rem, 1vw) var(--border-gray);
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 50%;
+  padding: max(0.8rem, 0.8vw) 0;
+  gap: max(2rem, 2vw);
+}
+
+.about-me-content h3 {
+  font-weight: bold;
+  font-size: calc(var(--resonsive-font-size) * 1.75);
+  color: var(--dark-mode-text);
+  text-align: center;
+}
+
+.about-me-sidebar {
+  display: flex;
+  justify-content: row;
+  width: max(max(15rem, 26vw), 95%);
+  justify-content: space-around;
+  gap: max(3rem, 3vw);
+  padding: max(1rem, 1vw);
+  background-color: #0e151f;
+  border: 2px solid var(--border-gray);
+}
+
+.about-me-sidebar p {
+  margin-top: max(5px, 0.31vw);
+}
+
+.about-me-sidebar h4 {
+  color: var(--dark-mode-text);
+  font-size: calc(var(--resonsive-font-size) * 1.1);
+}
+
+.about-me-sidebar .left-side,
+.about-me-sidebar .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: max(1rem, 1vw);
+}

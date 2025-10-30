@@ -1,0 +1,203 @@
+/* Resume Section */
+#resume {
+  padding-bottom: 0;
+}
+.resume-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: max(4rem, 4vw) max(2rem, 2vw);
+  position: relative;
+}
+
+.resume-container-left-side,
+.resume-container-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: max(3rem, 3vw);
+}
+
+.resume-container-left-side {
+  border-right: max(2px, 0.125vw) dashed rgb(189, 186, 186);
+}
+
+.resume-container-left-side > .experience {
+  text-align: left;
+  margin: 0 max(3rem, 3vw) 0 0;
+}
+
+.resume-container-right-side > .experience {
+  text-align: left;
+  margin: 0 0 0 max(3rem, 3vw);
+}
+
+.experience {
+  min-height: max(15rem, 15vw);
+  min-width: max(22rem, 22vw);
+  max-width: max(30rem, 30vw);
+  padding: max(1rem, 1vw);
+}
+.experience:not(.empty) {
+  border-radius: max(1rem, 1vw);
+  box-shadow: 0 0 max(1rem, 1vw) var(--dark-mode);
+}
+.ruler {
+  display: flex;
+  flex-direction: column;
+  gap: max(15rem, 15vw);
+  position: absolute;
+  top: max(10rem, 10vw);
+}
+
+.icon {
+  background-image: url("../images/tick.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: max(3rem, 3vw);
+  height: max(3rem, 3vw);
+  color: var(--alternate-color);
+}
+
+.experience > div {
+  display: flex;
+  flex-direction: row;
+  gap: max(2rem, 2vw);
+  margin-bottom: max(1rem, 1vw);
+}
+
+.experience > p {
+  font-size: var(--resonsive-font-size);
+}
+
+.experience > div h4 {
+  color: var(--alternate-color);
+}
+
+.experience > div h3,
+.exp-tools-used {
+  color: var(--light-mode-text);
+}
+
+.experience > div h3,
+.experience > div h4 {
+  font-size: max(1rem, 1vw);
+}
+
+.skill-list {
+  background-color: var(--border-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: max(4rem, 4vw) 0;
+  width: 100%;
+}
+
+.skill-list > h3 {
+  font-size: var(--resonsive-font-size);
+  text-align: center;
+  color: var(--light-mode-text);
+}
+
+.skill-list > p {
+  max-width: max(40rem, 40vw);
+  height: max(5rem, 5vw);
+  padding: max(1rem, 1vw);
+}
+
+.all-skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: max(2rem, 2vw);
+  padding: max(2rem, 2vw);
+}
+
+.skills {
+  display: flex;
+  width: 60%;
+  min-width: max(20rem, 25vw);
+  max-width: max(33rem, 33vw);
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: max(1.5rem, 1.5vw);
+}
+
+.individual-skill > img {
+  height: max(2rem, 2.5vw);
+}
+
+.individual-skill {
+  width: max(6rem, 7vw);
+  height: max(6rem, 7vw);
+  border-radius: 50%;
+  padding: max(1rem, 1vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: max(0.3rem, 0.3vw);
+  box-shadow: 0 0 max(1rem, 1vw) gray;
+}
+
+.individual-skill:hover {
+  box-shadow: 0 0 max(1rem, 1vw) var(--alternate-color);
+  transition: box-shadow 0.3s;
+}
+
+.cert-links-container ul {
+  list-style: none;
+  margin-top: max(1rem, 1vw);
+  width: 35%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: max(1rem, 1vw);
+}
+
+.cert-links-container h3 {
+  font-size: max(1.2rem, 1.2vw);
+  border-bottom: max(1px, 0.06vw) solid gray;
+  color: var(--light-mode-text);
+}
+
+.cert-links-container li {
+  width: 100%;
+  font-size: max(0.9rem, 0.9vw) !important;
+  display: flex;
+  align-items: center;
+}
+
+.cert-links-container a {
+  font-size: 0.8rem;
+}
+
+.cert-links-container a {
+  border: 1px solid gray;
+  text-decoration: none;
+  width: fit-content;
+  margin-left: max(1rem, 1vw);
+  color: var(--light-mode-text);
+  padding: max(4px, 0.25vw);
+  border-radius: max(5px, 0.31vw);
+}
+.cert-links-container a:hover {
+  box-shadow: 0 0 max(5px, 0.31vw) var(--button-color);
+  background-color: var(--alternate-color);
+  transition: background-color 0.3s;
+  transition: box-shadow 0.2s;
+}
+
+#coming-soon {
+  pointer-events: none;
+}
+
+.cert-links-container img {
+  width: max(1.2rem, 1.5vw);
+}

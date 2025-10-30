@@ -3,51 +3,702 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/./css/all.min.css"
     />
-    <title>Odin Restaurant Page</title>
+    <title>Emmanuel Obelenge - Portfolio</title>
   </head>
   <body>
+    <!-- Navbar -->
     <header>
-      <h1 class="logo">Taste Haven Restaurant</h1>
-      <div class="search-container">
-        <input
-          type="text"
-          class="search-bar"
-          placeholder="Search your favourite meal..."
-        />
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
+      <a href="index.html" class="logo" aria-label="Home page logo.">
+        <img src="./images/logo-png.png" alt="" />
+        <h1 aria-hidden="true">emma_obelenge</h1>
+      </a>
       <nav>
-        <button class="nav-btn home-btn">Home</button
-        ><button class="nav-btn menu-btn">Menu</button
-        ><button class="nav-btn about-btn">About</button
-        ><button class="nav-btn contact-btn">Contact Us</button>
+        <ul>
+          <li class="flex-item active-button">
+            <a href="#home" class="navBtn">Home</a>
+          </li>
+          <li class="flex-item"><a href="#about" class="navBtn">About</a></li>
+          <li class="flex-item"><a href="#resume" class="navBtn">Resume</a></li>
+          <li class="flex-item">
+            <a href="#services" class="navBtn">Services</a>
+          </li>
+          <li class="flex-item">
+            <a href="#projects" class="navBtn">Projects</a>
+          </li>
+          <li id="contact-nav-btn" class="flex-item">
+            <a href="#contact" aria-hidden="true" tabindex="-1">Let's Chat</a>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </nav>
+      <div class="theme-switch" aria-hidden="true">
+        <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+      </div>
     </header>
-    <div id="content"></div>
+
+    <!-- Hero Section Personal summary -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2 class="text-animate">I'm Emmanuel Obelenge</h2>
+        <div>
+          <h3>A Fullstack Developer</h3>
+          <p id="exp-brought">
+            I bring 5+ years of experience in IT support and about 1 year of
+            experience in fullstack web development.
+          </p>
+        </div>
+        <div class="hero-button-container">
+          <a
+            href="https://drive.google.com/file/d/1uz4GuK_h_AhHnTqpXI68H8Iuu9gu4PIX/view?usp=drive_link"
+            target="_blank"
+            class="btn download"
+            >Download CV <i class="fa-solid fa-file-lines" aria-label="as microsoft word document."></i
+          ></a>
+          <a href="mailto:obeleemmanuel@gmail.com" class="btn" aria-label="Hire Me via email"
+            >Hire Me <i class="fa-solid fa-user" aria-hidden="true"></i
+          ></a>
+        </div>
+
+        <div class="personal-summary" role="region" aria-label="My Personal Summary.">
+          <div>
+            <h4>+5</h4>
+            <p>Years of Experience</p>
+          </div>
+          <div>
+            <h4>+10</h4>
+            <p>Projects Done</p>
+          </div>
+          <div>
+            <h4>+2</h4>
+            <p>Worldwide Clients</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="./images/portrait.png" alt="Emmanuel Obelenge Portrait." />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-me-heading-container">
+        <h2 class="title">ABOUT ME</h2>
+        <p>
+          Specialty in IT support and fullstack web development, helping
+          businesses enhance their digital presence with modern solutions.
+        </p>
+      </div>
+
+      <div class="about-me-content-container">
+        <div class="about-me-portrait">
+          <img
+            src="./images/portrait2.png"
+            alt=""
+          />
+        </div>
+        <div class="about-me-content">
+          <h3>IT Specialist & Fullstack Developer</h3>
+          <p>
+            I am a results-driven IT professional and full-stack developer with
+            over five years of experience in infrastructure management,
+            application support, and cybersecurity. Skilled in modern web
+            technologies like HTML, CSS, JavaScript, React, and Node.js, I build
+            scalable and efficient applications while ensuring robust security.
+            I thrive in collaborative environments, delivering innovative IT
+            solutions that drive business success.
+          </p>
+          <div class="about-me-sidebar" aria-label="Profile Information.">
+            <div class="left-side">
+              <div>
+                <h4>Name</h4>
+                <p>Emmanuel Obelenge</p>
+              </div>
+              <div>
+                <h4>Age</h4>
+                <p>31 Years</p>
+              </div>
+              <div>
+                <h4>Occupation</h4>
+                <p>FullStack Developer</p>
+              </div>
+            </div>
+
+            <div class="right-side">
+              <div>
+                <h4>Phone</h4>
+                <p>+234 803 098 0657</p>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>obeleemmanuel@gmailcom</p>
+              </div>
+              <div>
+                <h4>Nationality</h4>
+                <p>Nigerian</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-interest">
+            <h4>Interests:</h4>
+              <p>
+                Internet surfing, Music (Bass Guitar Player), Video games,
+                Learning
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2 class="title">EDUCATION & EXPERIENCE</h2>
+      <div class="resume-container">
+        <div class="ruler">
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+        </div>
+        <div class="resume-container-left-side">
+          <div class="experience">
+            <div>
+              <h3 class="exp-year" aria-label="April 2024 to present">Apr. 2024 - Present</h3>
+              <h4 class="exp-position">System Control Engineer</h4>
+            </div>
+            <strong class="exp-details" aria-label="at Redbrick Homes">
+              Redbrick Homes:
+            </strong><br />
+              <ul aria-label="Work Roles.">
+                <li>Operating and monitoring the
+              MTU power generation plant (CNG) at Redbrick Homes to ensure a
+              continuous power supply.</li>
+                <li>Conducting routine preventive
+              maintenance on the generation plant to optimize performance and
+              longevity.</li>
+              </ul> <br />
+            <h5 class="exp-address">Lagos Nigeria</h5>
+            <br />
+            <div class="exp-tools-used" aria-label="Tools Used.">Tools Used:</div>
+          </div>
+
+          <div class="experience empty"></div>
+          <div class="experience">
+            <div>
+              <h3 class="exp-year" aria-label="November 2024 to January 2024">Nov. 2024 - Jan. 2024</h3>
+              <h4 class="exp-position">IT Specialist</h4>
+            </div>
+            <strong class="exp-details" aria-label="at Edidot College">Edidot College:</strong> <br />
+            <ul aria-label="Work Roles.">
+              <li>Devise and establish IT
+              policies and systems to support the implementation of strategies
+              set by upper management.</li>
+            </ul> <br />
+              <h5 class="exp-address">Lekki Lagos, Nigeria</h5>
+              <br />
+              <div class="exp-tools-used" aria-label="Tools Used.">Tools Used:</div>
+          </div>
+
+          <div class="experience empty"></div>
+          <div class="experience">
+            <div>
+              <h3 class="exp-year" aria-label="2013 to 2018">2013 - 2018</h3>
+              <h4 class="exp-position">
+                B.Tech - Agric. & Environ. Engineering
+              </h4>
+            </div>
+            <strong class="exp-details">
+              Rivers State University: </strong><br />
+              <ul aria-label="Work Roles.">
+                <li>Creative Problem
+              Solving, Sustainable Agriculture, Sustainable Development, Green
+              Technology, Renewable Energy, Biotechnology, Hydroponics</li>
+              </ul> <br />
+            <h5 class="exp-address">Port Harcourt, Rivers State</h5>
+            <br />
+            <div class="exp-tools-used" aria-label="Tools Used.">Tools Used:</div>
+          </div>
+        </div>
+
+        <div class="resume-container-right-side">
+          <div class="experience empty"></div>
+          <div class="experience">
+            <div>
+              <h3 class="exp-year" aria-label="April 2024 to November 2026">Apr. 2024 - Nov. 2026</h3>
+              <h4 class="exp-position" aria-label="Bachelors degree in computer science">B.Sc - Computer Science</h4>
+            </div>
+            <strong class="exp-details">University of the People:</strong><br />
+            <ul aria-label="Work Roles">
+              <li>Object-Oriented
+              Programming (OOP), Critical Thinking, Java Programming, Written
+              and Oral Communication, Data Structures, Analytical Skills.</li>
+            </ul><br />
+            <h5 class="exp-address">California, USA</h5>
+            <br />
+            <div class="exp-tools-used" aria-label="Tools Used">Tools Used:</div>
+          </div>
+          <div class="experience empty"></div>
+          <div class="experience">
+            <div>
+              <h3 class="exp-year" aria-label="March 2020 to February 2021">Mar. 2020 - Feb. 2021</h3>
+              <h4 class="exp-position">N.Y.S.C (Executive Assistant)</h4>
+            </div>
+            <strong class="exp-details">Odogbolu LGA Secretariat:</strong><br />
+            <ul>
+              <li>Prepared
+              correspondence, presentations, and reports, and maintained
+              confidential files, records, and sensitive information with utmost
+              discretion.</li>
+            </ul> <br />
+            <h5 class="exp-address">Ogun State, Nigeria</h5>
+            <br />
+            <div class="exp-tools-used" aria-label="Tools Used.">Tools Used:</div>
+          </div>
+          <div class="experience empty"></div>
+          <div class="experience">
+            <div>
+              <h3 class="exp-year" aria-label="April 2018 to November 2019.">Apr. 2018 - Nov. 2019</h3>
+              <h4 class="exp-position">Administrative Assistant</h4>
+            </div>
+            <strong` class="exp-details" aria-label="at Macekebu Communication">
+              Macekebu Communication - (GLO Network): </strong><br />
+              <ul>
+                <li>Operating and monitoring the MTU power generation plant
+              (CNG) at Redbrick Homes to ensure a continuous power supply.</li>
+              <li>Conducting routine preventive maintenance on the
+              generation plant to optimize performance and longevity.</li>
+              </ul><br />
+              <h5 class="exp-address">Port Harcourt, Rivers, Nigeria</h5>
+              <br />
+              <div class="exp-tools-used" aria-label="Tools Used">Tools Used:</div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-list">
+        <h3 id="skills-title">Skills:</h3>
+        <p>
+          I combine digital expertise, graphic design, and full-stack
+          development to craft innovative solutions, delivering seamless and
+          meaningful brand experiences.
+        </p>
+        <div class="all-skills-container">
+          <div class="skills">
+            <div class="individual-skill">
+              <img src="./images/logos/html.png" alt="" />
+              <h3>HTML</h3>
+              <p>95%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/css.png" alt="" />
+              <h3>CSS</h3>
+              <p>95%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/javascript.png" alt="" />
+              <h3>JavaScript</h3>
+              <p>70%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/C.png" alt="" />
+              <h3>C</h3>
+              <p>80%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/java.png" alt="" />
+              <h3>Java</h3>
+              <p>65%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/python.png" alt="" />
+              <h3>Python</h3>
+              <p>70%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/sql.png" alt="sql-logo" />
+              <h3>SQL</h3>
+              <p>85%</p>
+            </div>
+            <div class="individual-skill">
+              <img src="./images/logos/photoshop.png" alt="sql-logo" />
+              <h3>Photoshop</h3>
+              <p>90%</p>
+            </div>
+          </div>
+
+          <div class="cert-links-container">
+            <h3 id="cert-title">Certifications</h3>
+            <ul>
+              <li>
+                <img src="./images/green-tick.png" alt="" />Prompt
+                Engineering - By NASBA<a
+                  class="view-link"
+                  href="https://www.linkedin.com/learning/certificates/d91d1e3c63af8bbd05adee40b45d45970168a29ac7a0750f91d51d31f75ecbea?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B1a5zOu4WQrCrupiV%2Fnah9w%3D%3D"
+                  target="_blank"
+                  >View</a
+                >
+              </li>
+              <li>
+                <img src="./images/green-tick.png" alt="" />IT Vendor
+                Management - by COMPTIA<a
+                  class="view-link"
+                  href="https://www.linkedin.com/learning/certificates/48acff7eb8f908efbffdb86dbf63bc74616d0515e9dc5293b51bbf58846426ce?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B1a5zOu4WQrCrupiV%2Fnah9w%3D%3D"
+                  target="_blank"
+                  >View</a
+                >
+              </li>
+              <li>
+                <img src="./images/green-tick.png" alt="" />Manager
+                Professional - By LinkedIn
+                <a
+                  class="view-link"
+                  href="https://www.linkedin.com/learning/certificates/3d16a74ed8f3979b9b5f49a3ce36649b64b6283d40569d9b7bdd756df36b1804?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B1a5zOu4WQrCrupiV%2Fnah9w%3D%3D"
+                  target="_blank"
+                  >View</a
+                >
+              </li>
+              <li>
+                <img src="./images/green-tick.png" alt="" />Software
+                Engineering - By PLP Academy<a
+                  class="view-link"
+                  href="#"
+                  id="coming-soon"
+                  >Soon</a
+                >
+              </li>
+              <li>
+                <img src="./images/green-tick.png" alt="" />Intro to
+                Cybersecurity Badge - By Cisco
+                <a
+                  class="view-link"
+                  href="https://www.credly.com/badges/f99eb1c5-9872-4b0a-a6d0-412f2f83ebb2/linked_in_profile"
+                  target="_blank"
+                  >View</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2 class="title">SERVICES</h2>
+      <br />
+      <div class="services-container">
+        <div class="service-item">
+          <div class="service-item-header">
+            <h3>Websites</h3>
+            <p class="price">$2200</p>
+          </div>
+          <p class="service-item-text">
+            Get a stunning fully functional website tailored to your needs. I
+            deliver top-notch design concepts and seamless implementation for a
+            strong online presence.
+          </p>
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Website"
+            class="service-item-discover"
+            >Discover More</a
+          >
+          <div class="service-item-design">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-item-header">
+            <h3>Branding</h3>
+            <p class="price">$1100</p>
+          </div>
+          <p class="service-item-text">
+            Boost your brand’s identity with creative and strategic branding
+            solutions. Let’s craft a unique and impactful presence for your
+            business.
+          </p>
+          <a
+            target="_blank"
+            href="https://www.thebrandingjournal.com/2015/10/what-is-branding-definition/"
+            class="service-item-discover"
+            >Discover More</a
+          >
+          <div class="service-item-design">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-item-header">
+            <h3>Ecommerce</h3>
+            <p class="price">$3500</p>
+          </div>
+          <p class="service-item-text">
+            Looking for a customized eCommerce platform? I design and develop
+            high-performing online stores that enhance customer experience and
+            maximize sales.
+          </p>
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/E-commerce"
+            class="service-item-discover"
+            >Discover More</a
+          >
+          <div class="service-item-design">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-item-header">
+            <h3>SEO</h3>
+            <p class="price">$1350</p>
+          </div>
+          <p class="service-item-text">
+            Want your website to rank at the top of search results? I provide
+            expert SEO strategies to improve visibility, drive traffic, and
+            boost your online reach.
+          </p>
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Search_engine_optimization"
+            class="service-item-discover"
+            >Discover More</a
+          >
+          <div class="service-item-design"><i class="fa-solid fa-g"></i></div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-item-header">
+            <h3>PC Repairs</h3>
+            <p class="price">From $200</p>
+          </div>
+          <p class="service-item-text">
+            Need a quick and efficient fix for your computer? I offer
+            professional PC repair services, software & hardware
+            troubleshooting, and performance optimization.
+          </p>
+          <a
+            target="_blank"
+            href="https://www.google.com/search?q=more+about+meaning+of+pc+repair&sca_esv=4fc2a90d16b83663&sxsrf=AHTn8zq3SV0H3nm-VGE5Gxs6_UgliygUlw%3A1743790372055&ei=JCHwZ76OA9K5hbIPlO63uQw&ved=0ahUKEwi-sMGt_b6MAxXSXEEAHRT3LccQ4dUDCBA&uact=5&oq=more+about+meaning+of+pc+repair&gs_lp=Egxnd3Mtd2l6LXNlcnAiH21vcmUgYWJvdXQgbWVhbmluZyBvZiBwYyByZXBhaXIyBRAAGO8FMggQABiABBiiBDIIEAAYogQYiQUyCBAAGIAEGKIESLtMUO0iWMdFcAF4AZABAJgBhAKgAc4nqgEEMi0yMrgBA8gBAPgBAZgCCKACwQ3CAgoQABiwAxjWBBhHwgIOEAAYgAQYsAMYkgMYigXCAgYQABgHGB7CAggQABgHGAgYHsICCxAAGIAEGIYDGIoFwgIIECEYoAEYwwTCAgoQIRigARjDBBgKmAMAiAYBkAYKkgcFMS4wLjegB-1YsgcDMi03uAeoDQ&sclient=gws-wiz-serp"
+            class="service-item-discover"
+            >Discover More</a
+          >
+          <div class="service-item-design">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-item-header">
+            <h3>Tech Support</h3>
+            <p class="price">$1000</p>
+          </div>
+          <p class="service-item-text">
+            From network configurations to system upgrades, I provide expert
+            tech support to ensure seamless operation of your devices and IT
+            infrastructure.
+          </p>
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Technical_support"
+            class="service-item-discover"
+            >Discover More</a
+          >
+          <div class="service-item-design">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="title">PROJECTS</h2>
+      <div class="project-button-container">
+        <ul>
+          <li><button id="all-works" class="active-btn">All Works</button></li>
+          <li><button id="web-design">Web Design</button></li>
+          <li><button id="graphics">Graphics</button></li>
+          <li><button id="it-support">IT Support</button></li>
+          <li><button id="coding">Coding</button></li>
+        </ul>
+      </div>
+      <div class="projects-container">
+        <div class="project" id="project-web-design">
+          <div class="project-img-container">
+            <img src="./images/projects/developer.jpg" alt="Project 1" />
+          </div>
+          <h3 class="project-title">WEB DESIGN</h3>
+          <p class="project-description">
+            A personal portfolio showcasing my skills.
+          </p>
+        </div>
+
+        <div class="project" id="project-ecommerce">
+          <div class="project-img-container">
+            <img src="./images/projects/ecommerce.jpg" alt="Project 1" />
+          </div>
+          <h3 class="project-title">E-COMMERCE WEBSITE</h3>
+          <p class="project-description">
+            Developed an online store using HTML & CSS.
+          </p>
+        </div>
+
+        <div class="project" id="project-graphics-design">
+          <div class="project-img-container">
+            <img src="./images/projects/graphics.jpg" alt="Project 1" />
+          </div>
+          <h3 class="project-title">GRAPHICS DESIGN</h3>
+          <p class="project-description">
+            Developed an online store using HTML & CSS.
+          </p>
+        </div>
+
+        <div class="project" id="project-it-support">
+          <div class="project-img-container">
+            <img
+              src="./images/projects/tech-support.jpg"
+              alt="Project 1"
+            />
+          </div>
+          <h3 class="project-title">IT SUPPORT</h3>
+          <p class="project-description">
+            Developed an online store using HTML & CSS.
+          </p>
+        </div>
+
+        <div class="project" id="project-calculator">
+          <div class="project-img-container">
+            <img src="./images/projects/calculator.jpg" alt="Project 1" />
+          </div>
+          <h3 class="project-title">ONLINE CALCULATOR</h3>
+          <p class="project-description">
+            Developed an online store using HTML & CSS.
+          </p>
+        </div>
+
+        <div class="project" id="project-coding">
+          <div class="project-img-container">
+            <img src="./images/projects/coding.jpg" alt="Project 1" />
+          </div>
+          <h3 class="project-title">CODING CHALLENGE</h3>
+          <p class="project-description">
+            Developed an online store using HTML & CSS.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-content">
+          <h2>Have a project in mind?<br /><br />Let’s get to work.</h2>
+          <div id="overlay"></div>
+          <button>Say Hello</button>
+        </div>
+        <div class="contact-img">
+          <img src="./images/contact-me.png" alt="" />
+        </div>
+
+        <div class="contact-form">
+          <h3>
+            Got Ideas? We've got the skills. <br />
+            Let’s team up.
+          </h3>
+          <p>Tell me more about what you've got in mind.</p>
+          <form>
+            <div>
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              required
+              id="contact-form-subject"
+            />
+            <textarea
+              placeholder="Your Message..."
+              required
+              rows="5"
+              id="contact-form-textarea"
+            ></textarea>
+            <button id="contact-form-submit-btn" type="submit">
+              Send Message
+            </button>
+          </form>
+          <div class="close-button"><p>x</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Developed by Emmanuel Obelenge.</p>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/emmanuel.obelenge1"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://x.com/emma_obelenge"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
-        <a href="https://www.instagram.com/emma_obelenge"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/emmanuel-obelenge"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
+      <div class="footer-eclipse">
+        <div class="footer-container">
+          <div class="footer-item-top">
+            <div class="footer-item">
+              <span class="footer-icon"><i class="fa-solid fa-phone"></i></span>
+              <p>Mon-Fri from 8am to 5pm.</p>
+              <p class="bold">+234 803-0980657</p>
+            </div>
+
+            <div class="footer-item">
+              <span class="footer-icon"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <p>Our friendly team is here to help.</p>
+              <p class="bold">obeleemmanuel@gmail.com</p>
+            </div>
+
+            <div class="footer-item">
+              <span class="footer-icon"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              <p>Come say hello at our office HQ.</p>
+              <p class="bold">Ibeju-Lekki, Lagos, <br />Nigeria.</p>
+            </div>
+          </div>
+
+          <div class="footer-item-bottom">
+            <p class="copyright">
+              Copyright &copy; 2025 Emmanuel Obelenge. All Rights Reserved.
+            </p>
+            <div class="social-links">
+              <a href="https://github.com/emma-obelenge" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/emmanuel-obelenge"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://x.com/emma_obelenge" target="_blank"
+                ><i class="fa-solid fa-x"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/emmanuel.obelenge1"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/emma_obelenge" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script defer type="module" src="./js/index.js"></script>
   </body>
-  <script type="module" src="./src/index.js"></script>
 </html>

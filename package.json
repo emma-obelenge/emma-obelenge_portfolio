@@ -1,4 +1,10 @@
 {
+  "name": "emma-obelenge_portfolio",
+  "version": "1.0.0",
+  "description": "Developer portfolio featuring personal and client projects.",
+  "main": "webpack.common.js",
+  "author": "Emmanuel Obelenge",
+  "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "handlebars": "^4.7.8",

@@ -1,0 +1,25 @@
+.theme-switch {
+  position: fixed;
+  right: 0;
+  top: max(7rem, 7vw);
+  background-color: #0ea5e9;
+  padding: max(0.6rem, 0.6vw) max(1rem, 1vw);
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  box-shadow: 0 0 max(10px, 0.625vw) #27549ba5;
+  transition: background-color 0.2s;
+}
+
+.theme-switch i {
+  color: var(--light-mode-text);
+  font-size: max(1.5rem, 1.5vw);
+  transition: 0.3s;
+}
+
+.theme-switch:hover {
+  cursor: pointer;
+  background-color: #0594d7;
+}
+.theme-switch:hover i {
+  color: var(--dark-mode-text);
+}

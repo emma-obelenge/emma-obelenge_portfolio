@@ -1,0 +1,228 @@
+/* Contact Me Section */
+#contact {
+  background-color: var(--dark-mode);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  position: relative;
+  padding-left: max(3rem, 3vw);
+  padding-right: max(3rem, 3vw);
+}
+
+.contact-content {
+  width: 60%;
+  padding-top: max(2rem, 2vw);
+  text-align: left;
+}
+
+.contact-content h2 {
+  color: var(--dark-mode-text);
+  font-size: calc(var(--resonsive-font-size) * 2);
+  margin-bottom: max(3rem, 3vw);
+}
+
+.contact-content button {
+  background-color: var(--button-color);
+  color: var(--dark-mode-text);
+  padding: max(0.6rem, 0.6vw) max(1.2rem, 1.2vw);
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.contact-content button:hover {
+  background-color: var(--button-color-dark);
+}
+
+.contact-img img {
+  height: max(20rem, 20vw);
+  max-width: max(70rem, 70vw);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 26, 26, 0.749); /* Faded background */
+  display: none;
+  z-index: 11;
+}
+
+.contact-form {
+  z-index: 12;
+  height: fit-content;
+  width: max(20rem, 40vw);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  border-radius: max(0.4rem, 0.4vw);
+  padding: max(2.5rem, 2.5vw);
+  background-color: var(--light-mode);
+  text-align: left;
+  display: none;
+}
+
+.contact-form form {
+  display: flex;
+  padding-top: max(1.7rem, 1.7vw);
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  gap: max(1rem, 1vw);
+}
+
+.contact-form form div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-form h3 {
+  font-size: max(1.2rem, 1.6vw);
+  color: var(--light-mode-text);
+  margin-bottom: max(1rem, 1vw);
+}
+
+#contact-form-subject,
+#contact-form-textarea {
+  width: 100%;
+  border: max(1px, 0.06vw) solid #c4c2c2;
+  padding: max(0.5rem, 0.5vw);
+  color: var(--light-mode-text);
+  font-size: max(0.8rem, 0.8vw);
+  font-weight: bold;
+}
+
+.contact-form input::placeholder {
+  font-size: max(0.7rem, 0.7vw);
+  font-weight: bold;
+}
+
+.contact-form input {
+  height: max(2rem, 2vw);
+  width: 45%;
+  border: max(1px, 0.06vw) solid rgb(196, 194, 194);
+  padding: max(0.5rem, 0.5vw);
+  color: var(--light-mode-text);
+  font-size: max(0.8rem, 0.8vw);
+  font-weight: bold;
+}
+
+.close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: max(0.2rem, 0.2vw) max(0.4rem, 0.4vw);
+  background-color: #ede7f5;
+  margin: max(0.5rem, 0.5vw);
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+.close-button p {
+  font-size: max(0.8rem, 0.8vw);
+  font-weight: bold;
+  color: var(--button-color);
+}
+
+.contact-form button {
+  padding: max(0.6rem, 0.6vw);
+  background-color: var(--button-color);
+  border: transparent;
+  color: var(--dark-mode-text);
+  cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+  background-color: var(--dark-mode);
+}
+
+.footer-eclipse {
+  width: 100%;
+  background-color: var(--button-color);
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  padding-top: max(5rem, 5vw);
+}
+
+.footer-container {
+  margin: auto;
+  width: 90%;
+}
+
+.footer-item-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: max(1rem, 1vw);
+  border-bottom: 1px solid #9c999f;
+  padding-bottom: max(2rem, 2vw);
+}
+
+.footer-icon .fa-solid {
+  color: var(--alternate-color);
+  font-size: calc(var(--resonsive-font-size) * 1.5);
+  margin-bottom: max(1.5rem, 1.5vw);
+}
+
+.footer-item .bold {
+  font-weight: bold;
+  color: var(--dark-mode-text);
+}
+
+.footer-item p,
+.copyright {
+  color: #e3dbeb;
+}
+
+.footer-item {
+  text-align: left;
+  width: max(18rem, 18vw);
+  line-height: max(1.5rem, 1.5vw);
+}
+
+.footer-item-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: max(2rem, 2vw);
+  padding-bottom: max(2rem, 2vw);
+}
+.social-links {
+  margin-left: auto;
+  width: fit-content;
+  padding: max(0.5rem, 0.5vw);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-links a {
+  margin-left: max(1rem, 1vw);
+}
+
+.social-links i {
+  font-size: calc(var(--resonsive-font-size) * 1.5);
+  color: var(--dark-mode);
+  transition: 0.2s;
+}
+
+.social-links a:hover i {
+  color: var(--alternate-color);
+}

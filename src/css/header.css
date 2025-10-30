@@ -1,0 +1,99 @@
+/* Header Section*/
+header {
+  max-height: max(5rem, 5vw);
+  overflow: hidden;
+  display: flex;
+  border-bottom: max(2px, 0.125vw) solid var(--border-gray);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: max(0.3rem, 1vw) max(0.3rem, 2vw);
+  background: #050c17;
+  color: white;
+  position: sticky;
+  width: 100%;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: max(2.5vw, calc(var(--resonsive-font-size) * 1.5));
+  color: var(--button-color);
+}
+
+.logo > img {
+  height: max(2.2rem, 3vw);
+  width: max(2.2rem, 3vw);
+  margin-right: max(1rem, 1vw);
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: max(5px 0.313vw);
+}
+
+nav .fa-bars {
+  display: none;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+ul .flex-item {
+  height: max(2rem, 2vw);
+  padding: max(5px, 0.313vw);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  font-size: max(1rem, 1vw);
+}
+
+nav ul li a:hover {
+  color: #994ff5;
+}
+
+#contact-nav-btn {
+  background-color: white;
+  min-width: max(7rem, 7vw);
+  width: max(7rem, 7vw);
+  text-align: center;
+  cursor: pointer;
+}
+
+#contact-nav-btn > a {
+  color: black;
+  text-align: center;
+}
+
+#contact-nav-btn:hover {
+  background-color: rgb(220, 219, 219);
+}
+
+.fa-moon {
+  display: none;
+}

@@ -1,0 +1,118 @@
+/* Services Section */
+#services {
+  background: linear-gradient(90deg, #f8bc17a3, rgba(196, 193, 193, 0.811));
+  margin-top: 0;
+}
+.services-container {
+  width: 92%;
+  padding: max(4rem, 4vw) 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: max(2rem, 2vw);
+  flex-wrap: wrap;
+}
+
+.service-item {
+  max-width: max(18rem, 18vw);
+  min-width: max(15rem, 15vw);
+  height: max(25rem, 25vw);
+  max-height: max(30rem, 30vw);
+  border: 1px solid var(--light-mode-text);
+  border-radius: max(2rem, 2vw);
+  padding: max(1rem, 1vw);
+  background-color: rgba(215, 142, 8, 0.583);
+  transition: 0.3s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item * {
+  transition: 0.3s;
+}
+
+.service-item p,
+.service-item a {
+  color: #212121;
+  text-decoration: none;
+  margin-bottom: max(1.5rem, 1.5vw);
+  font-size: max(1rem, 1vw);
+}
+
+.service-item a {
+  border: max(1px, 0.06vw) solid #8131e33f;
+  padding: max(0.5rem, 0.5vw);
+  border-radius: max(1rem, 1vw);
+  transition: border 0.3s;
+  transition: background-color 0.3s;
+}
+
+.service-item a:hover {
+  background-color: rgba(205, 133, 0, 0.66);
+}
+
+.service-item:hover {
+  background-color: var(--alternate-color);
+}
+
+.service-item:hover .service-item-design *:not(.fa-solid),
+.service-item:hover .service-item-design,
+.service-item:hover .price {
+  color: white;
+  background-color: #8131e3dc;
+}
+
+.service-item:hover .fa-solid {
+  color: white;
+}
+
+.service-item-header {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  border-bottom: max(1px, 0.06vw) solid gray;
+  margin-bottom: max(1rem, 1vw);
+}
+.service-item-header p {
+  margin-left: auto;
+  padding: max(0.2rem, 0.2vw) max(1rem, 1vw);
+  border-radius: max(1rem, 1vw);
+  color: var(--dark-mode-text);
+  background-color: #8131e33f;
+  border: max(1px, 0.06vw) solid transparent;
+  box-shadow: 0 0 max(1rem, 1vw) rgb(241, 160, 8);
+}
+
+.service-item-header h3 {
+  font-weight: bold;
+  font-size: max(1.5rem, 1.5vw);
+  color: var(--light-mode-text);
+  padding: 0;
+}
+
+.service-item-design {
+  border: max(1px, 0.06vw) solid #8131e33f;
+  border-radius: max(1rem, 1vw);
+  width: max(12rem, 12vw);
+  height: max(13.5rem, 13.5vw);
+  padding: max(2rem, 2vw);
+  position: absolute;
+  bottom: max(-8rem, -8vw);
+  right: max(-3rem, -3vw);
+  transform: rotate(-35deg);
+  text-align: center;
+}
+
+.service-item-design * {
+  font-size: max(3.5rem, 3.5vw);
+  color: #2121218d;
+  transition: 0.3s;
+}
+
+.service-item-discover {
+  width: fit-content;
+}

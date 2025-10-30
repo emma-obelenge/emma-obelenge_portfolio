@@ -1,0 +1,72 @@
+/* Variables setup */
+:root {
+  --light-mode: white;
+  --dark-mode: #050c17;
+  --light-mode-text: #050c17;
+  --dark-mode-text: white;
+  --alternate-color: #f8bc17;
+  --button-color: #994ff5;
+  --button-color-dark: #8131e3;
+  --border-gray: #b4b8c627;
+  --resonsive-font-size: max(1rem, 1.2vw);
+}
+
+/* General Styling */
+html {
+  font-size: 16px;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--light-mode);
+  color: #969db7;
+  font-size: var(--resonsive-font-size);
+}
+
+.title {
+  color: var(--light-mode-text);
+  background-color: var(--button-color);
+  padding: max(0.7rem, 0.7vw) max(1rem, 1vw);
+  border-radius: max(2rem, 2vw);
+  font-weight: bolder;
+  font-size: calc(var(--resonsive-font-size) * 1.5);
+  width: fit-content;
+  display: inline-block;
+}
+
+section:not(.hero),
+footer {
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section:not(.hero):not(footer) {
+  padding: max(5rem, 5vw) 0;
+}
+
+/* General Button Animation */
+button:hover,
+.btn:hover {
+  animation-name: btn-animation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn-animation {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(max(2px, 0.125vw), max(-5px, -0.313vw));
+  }
+}
